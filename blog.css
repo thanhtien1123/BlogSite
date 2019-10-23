@@ -1,0 +1,153 @@
+
+
+body {
+    background: #efe9cc;
+  }
+
+a {
+  text-decoration: none;
+}  
+  
+  .container {
+    display: grid;
+    grid-auto-rows: 140px auto 300px;
+    grid-template-areas: 
+    "nav nav nav nav nav nav nav nav"
+    "main main main main main main sd sd"
+    "ft ft ft ft ft ft ft ft"
+    ;
+}
+  
+  /* Working with nav bar */
+  .logo {
+    text-decoration: none;
+  }
+  .navbar {
+      grid-area: nav;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background-color: #f6cd90;
+      margin: 0 auto;
+    }
+  
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+    
+    .nav-item a {
+      display: inline-block;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 20px;
+      color: black;
+    }
+    
+    .nav-item:hover {
+      background-color: white;
+    }
+    
+    .nav-item:hover a {
+      color: #000;
+    }
+    
+
+/* Main content */
+.article {
+    grid-area: main;
+}
+
+.title {
+    text-align: center;
+}
+
+.main_article {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.image {
+    width: 100%;
+     height: auto;
+}
+
+/* Side bar */
+.other_articles {
+    grid-area: sd;
+    background: #deb881
+}
+
+.other_article_header {
+    text-align: center;
+}
+
+.list_of_other_articles{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+input {
+    width: 80%;
+    height: 50px;
+}
+
+form {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+/* Working with footer  */
+.footer {
+    grid-area: ft;
+    background: #f6cd90;
+  }
+  
+  .footer_nested_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 11%);
+    grid-template-rows: auto;
+    grid-template-areas: "sr sr sr sm sm sm links links links";
+  }
+  
+  .search_bar {
+    margin: 60px 70px;
+    grid-area: sr;
+    color: black;
+  }
+  
+  .search_box {
+    height: 30px;
+    width: 100%;
+  }
+  
+  .social_media {
+    grid-area: sm;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .links {
+    grid-area: links;
+    margin: auto;
+    font-size: larger;
+  }
+  
+  .link_list {
+    list-style: none;
+    color: black;
+  }
+  
+  li {
+    text-decoration: none;
+  }
+  
+  .social_icon {
+    display: inline-block;
+    margin: 10px;
+    color: black;
+  }

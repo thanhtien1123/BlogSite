@@ -1,0 +1,196 @@
+body {
+  background: #efe9cc;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 140px 400px auto auto 300px;
+    grid-template-areas:  
+    "nav nav nav nav nav nav nav nav"
+    "slider slider slider slider slider slider slider slider"
+    "sd main main main main main main main"
+    "fea fea fea fea fea fea fea fea"
+    "ft ft ft ft ft ft ft ft"
+    ;
+}
+
+/* Working with nav bar */
+.logo {
+  text-decoration: none;
+}
+.navbar {
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #f6cd90;
+    margin: 0 auto;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+  }
+  
+  .nav-item:hover {
+    background-color: white;
+  }
+  
+  .nav-item:hover a {
+    color: #000;
+  }
+  
+/* Working with slider */
+.sliders {
+  width: 100%;
+  grid-area: slider;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(Images/jenna-beekhuis-Bm0Ja6LZWl4-unsplash.jpg);
+}  
+
+/* Working with side bar */
+.about_me_header {
+  text-align: center;
+}
+.side_bar {
+  grid-area: sd;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-bottom: #F6CD90 solid 1px;
+  border-right: #F6CD90 solid 1px;
+
+}
+
+/* Working with content summary */
+.recent_post_header {
+  text-align: center;
+}
+.content_summary {
+  grid-area: main;
+  border-bottom: #F6CD90 solid 1px;
+}
+
+.post1 {
+  margin: 3%;
+}
+
+.post2 {
+  margin: 3%
+}
+/* Working with feature section */
+
+.featured_post_header, #fea_post_a {
+  text-align: center;
+}
+
+.featured_post {
+  grid-area: fea;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: 12% 12% 12% 12%;
+  grid-template-areas: "pt1 pt1 pt2 pt2 pt3 pt3 pt4 pt4";
+}
+
+
+.fea_post_1 {
+  grid-area: pt1;
+}
+
+.fea_post_2 {
+  grid-area: pt2;
+  border-left: solid 1px #f6cd90;
+}
+
+.fea_post_3{
+  grid-area: pt3;
+  border-left: solid 1px #f6cd90;
+}
+
+.fea_post_4 {
+  grid-area: pt4;
+  border-left: solid 1px #f6cd90;
+}
+
+#fea_post_header {
+  text-align: center;
+}
+
+#fea_post_p {
+  margin: 5% 10%;
+}
+
+#fea_post_a {
+  text-align: center;
+}
+
+/* Working with footer  */
+.footer {
+  grid-area: ft;
+  background: #f6cd90;
+}
+
+.footer_nested_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 11%);
+  grid-template-areas: "sr sr sr sm sm sm links links links";
+}
+
+.search_bar {
+  margin: 60px 70px;
+  grid-area: sr;
+  color: black;
+}
+
+.search_box {
+  height: 30px;
+  width: 100%;
+}
+
+.social_media {
+  grid-area: sm;
+  margin: auto;
+  text-align: center;
+}
+
+.links {
+  grid-area: links;
+  margin: auto;
+  font-size: larger;
+}
+
+.link_list {
+  list-style: none;
+  color: black;
+}
+
+li {
+  text-decoration: none;
+}
+
+.social_icon {
+  display: inline-block;
+  margin: 10px;
+  color: black;
+}
+
+
+
+  
