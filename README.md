@@ -1,5 +1,8 @@
 # BlogSite
 
+# Knowledge from this project
+ Using basic HTML and CSS to create multiple pages blog site. I also learn how to use tools such as Media Query, Grid in CSS to make the site more responsive. No JS in this project.
+
 Home Page
 <img width="690" alt="Screen Shot 2019-10-27 at 11 40 22 AM" src="https://user-images.githubusercontent.com/42286622/67637227-a81d4800-f8ae-11e9-8fed-8f44f515149f.png">
 
